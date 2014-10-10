@@ -21,7 +21,7 @@ function woocommerce_extra_informatie() {
 
     if (!empty($size)){    
 
-      foreach ($sizes as $value){   ?>
+      foreach ($sizes as $value){   
 
        echo $value;
 
