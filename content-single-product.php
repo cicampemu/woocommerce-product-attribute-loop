@@ -2,7 +2,7 @@
 
 // This code is for the file content-single-product.php in the WordPress repository your-WP-theme/woocommerce/.
 
-//creates a new function to get and output product attribute.
+//creates a new function to get and output product attribute from database.
 function woocommerce_extra_informatie() {
   
   global $product;
