@@ -9,3 +9,6 @@ I created a new function woocommerce_extra_informatie() where I retrieve the pro
 
 This code snippet has to be added to your-WP-theme/woocommerce/content-single-product.php just before:
 do_action( 'woocommerce_single_product_summary' );
+
+
+... hope that helps someone! ;)
