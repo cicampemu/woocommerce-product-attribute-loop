@@ -1,29 +1,31 @@
 <?php
 
-// This code is for the file content-single-product.php in the WordPress repository your-WP-theme/woocommerce/
+// This code is for the file content-single-product.php in the WordPress repository your-WP-theme/woocommerce/.
 
-
+//creates a new function to get and output product attribute.
 function woocommerce_extra_informatie() {
   
   global $product;
   
-  //desribes all the types of array delimiters for the product parameters
+  //desribes all the types of array delimiters for the product parameters.
   $arrDelimiters = array("/", ",");
   
-  //gets the size parameter of the product in the Woocommerce database
+  //gets the size parameters of the product in the Woocommerce database.
   $size = $product->get_attribute( 'pa_size' );
   
-  //replace and uniformize all array delimiters to -|- 
+  //replace and uniformize all array delimiters to -|-. 
   $uniformArr = str_replace($arrDelimiters, "-|-", $size);
   
   //explodes the size parameter array
   $sizes = explode("-|-", $uniformArr);
 
     if (!empty($size)){    
-
+      
+      //outputs the product attribute in a loop.
       foreach ($sizes as $value){   
-
-       echo $value;
+      
+      //you can put HTML here.
+      echo $value;
 
       }
 }
